@@ -1,0 +1,32 @@
+//Stanford empty project
+
+// DEFINE variables here
+var Sara
+function setup() {
+createCanvas(800,600);
+//INSTANTIATE variables here
+Sara= createSprite(100, 150, 200, 250);
+}
+
+function draw() {
+background(200);
+//UPDATE variables here
+drawSprites();
+    if(keyDown(37)){
+//Put what you want to happen when left is pressed in here
+Sara.addSpeed(.05, 180);
+}
+
+if(keyDown(39)){
+//Put what you want to happen when right is pressed in here
+Sara.addSpeed(.05, 360);
+}
+if( keyDown(38)){
+//Put what you want to happen when right is pressed in here
+Sara.addSpeed(.05, 270);
+}
+if( keyDown(40)){
+//Put what you want to happen when right is pressed in here
+Sara.addSpeed(.05, 90);
+}
+}
